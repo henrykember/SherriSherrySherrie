@@ -1,0 +1,162 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+html  {
+    cursor: url("./Fez-Medlrg.png"), auto;
+            /*width: 22px;*/
+}
+body {
+  font-family: 'Times';
+  margin: 0;
+  padding: 0;
+/*  width: 80%;*/
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
+  /*background-color: red;*/
+}
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:999; /* makes sure it stays on top */
+}
+
+#status {
+    /*width:80px;
+    height:80px;*/
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    /*background-image:url(loading2.gif);  path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-40px 0 0 -40px; /* is width and height divided by two */
+}
+#status img  {
+   width:80px;
+  height:80px;
+  
+}
+.menucontainer  {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+/*  border: 1px solid black;*/
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 70px;
+}
+.menuitems a  {
+  list-style-type: none;
+  outline: 1px solid black;
+  color: black;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menuitems a:hover  {
+  font-style: italic;
+}
+
+.logowrapper  {
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+.logo {
+  float: right;
+  font-size: 44px;
+  margin-top: 280px;
+  margin-right: -50px;
+  width: 350px;
+  padding: 20px;
+  border: 5px solid black;
+  transform: translate(-50%, -100%);
+  transform: rotate(90deg);
+}
+
+.subtitles  {
+  position: relative;
+  display: inline-block;
+  list-style-type: none !important;
+  text-decoration: none;
+    line-height: 15px;
+    /*margin-top: -3px;*/
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000000;
+  /*z-index: 6;*/
+}
+
+.flex-container {
+    z-index: 100;
+    display: flex;
+    min-width: 1080px;
+    justify-content: space-around;
+    margin: auto;
+/*    background-color: red;*/
+}
+.flex-item {
+    width: 440px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+.flex-item a  {
+  font-style: italic;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 140px;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
+}
+.subheader  {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.piccontainer img  {
+  width: 180px;
+}
+#img1  {
+  position: absolute;
+  top: 200px;
+  margin-left: 200px;
+  border: 1px solid red;
+  z-index: 1;
+}
+
+#img2  {
+  position: absolute;
+  top: 210px;
+  margin-left: 230px;
+  border: 1px solid red;
+  z-index: 2;
+}
+#img2  {
+  position: absolute;
+  top: 210px;
+  margin-left: 500px;
+  border: 1px solid red;
+  z-index: 3;
+}
+
+.bottom  {
+  position: absolute;
+  top: 3600px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  /*border: 1px solid black;*/
+  text-align: center;
+  line-height: 20px;
+}
+
+
