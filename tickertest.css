@@ -37,99 +37,22 @@ body {
 #status img  {
    width:80px;
   height:80px;
-  
 }
-/*.menucontainer  {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
-.menu {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 70px;
-}
-.menuitems a  {
-  list-style-type: none;
-  outline: 1px solid black;
-  color: black;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.menuitems a:hover  {
-  font-style: italic;
-}*/
 
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
 
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
 
+.img-ticker {
+  animation: ticker-kf 18s linear infinite;
+}
 
-
-.flex-container {
-    z-index: 100;
-    display: flex;
-    min-width: 1080px;
-    justify-content: space-around;
-    margin: auto;
-/*    background-color: red;*/
-}
-.flex-item {
-    width: 440px;
-    height: 100px;
-    border: 1px solid black;
-    text-align: center;
-}
-.flex-item a  {
-  font-style: italic;
-  font-size: 50px;
-  text-transform: uppercase;
-  margin-top: 140px;
-  /*margin-top: auto;
-  margin-bottom: auto;*/
-}
-@keyframes ticker {
-        0% { transform: translate3d(0, 0, 0); }
-        100% { transform: translate3d(-100%, 0, 0); }
-      }
-      .tcontainer{
-        width: 100%;
-        overflow: hidden;
-      }
-      .ticker-wrap {
-        width: 100%;
-        padding-left: 100%;
-        border-bottom: 1px solid black;
-    
-      }
-      .ticker-move {
-        display: inline-block;
-        white-space: nowrap;
-        padding-right: 100%;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-name: ticker;
-        animation-duration: 25s;
-      }
-      .ticker-move:hover{
-        animation-play-state: paused;
-      }
-      .ticker-item{
-        display: inline-block;
-        padding: 0 27rem;
-      }
-.piccontainer img  {
-  width: 180px;
-}
-.number  {
-  position: absolute;
-  top: 0;
-  display: block;
-  color: white;
-  display: none;
-}
 #img1  {
   position: absolute;
   top: 220px;
